@@ -1,6 +1,10 @@
 {
+  "name": "project-root",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:f": "npm run dev --prefix frontend",
+    "dev:b": "npm run dev --prefix backend"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
